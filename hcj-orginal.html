@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <title>Registration Form</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#ff0000;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+          
+        
+               
+    background-image: linear-gradient(to right, #ff6b6b, #ffa500, #ffff00, #00ff00, #00bfff);
+    background-size: 500% 500%;
+    animation: colorShift 30s ease infinite;
+}
+
+@keyframes colorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+        .form-container {
+            background-color: whitesmoke;
+            padding-top: 35px;
+            padding: 50px;
+            padding-right: 55px;
+            padding-bottom: 35px;
+            padding-left: 35px;
+            border-radius: 100px;
+            box-shadow: 0 0 20px rgba(102, 175, 233, 0.6);
+            max-width: 450px;
+            width: 450%;
+            -webkit-appearance:none;
+            -moz-appearance:none;
+             
+    background-image: linear-gradient(to right, #4CAF50, #00bfff, #1ed9c2, #ffff00, #00bfff);
+    background-size: 500% 500%;
+    animation: colorShift 30s ease infinite;
+}
+
+@keyframes colorShiftt {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+           
+        
+
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+            .form-group label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .form-group input {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #808080;
+                border-radius: 5px;
+                font-size: 16px;
+                 cursor: pointer;
+            }
+
+        .gender-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+             cursor: pointer;
+        }
+
+            .gender-group input[type="radio"] {
+                margin-right: 5px;
+
+
+         
+                 
+            }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0 10px;
+        }
+
+            .btn.exit {
+                background-color:red;
+            }
+    </style>
+</head>
+<body>
+    
+        <div class="form-container">
+            <h2>Registration Form</h2>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+
+            <div class="gender-group">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+            <div class="btn-group">
+                <a href="hcj-exit.html" class="btn exit">Exit</a>
+                <button type="submit" class="btn register" onclick="window.open('hcj-end.html','_blank')">Next</button>
+            
+            </div>
+        </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+           
+       
+    background-image: linear-gradient(to right, #ff6b6b, #ffa500, #ffff00, #00ff00, #00bfff);
+    background-size: 500% 500%;
+    animation: colorShift 30s ease infinite;
+}
+
+@keyframes colorShift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+        
+
+        h1 {
+            color: red;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>you are out |<br /></h1>
+
+    <script>
+        var t = new Date().getHours;
+
+
+        if (t < 10) {
+            document.write("Good Morning-")
+        }
+        else if (t >= 10 && t < 14) {
+            document.write("Good Afternoon-")
+        }
+
+        else if (t <= 14 && t < 6) {
+            document.write("Evenings bekheir-")
+        }
+
+        else {
+            document.write("Good Night-")
+        }
+
+        var currentDate = new Date();
+
+
+        var currentDay = currentDate.getDay();
+
+
+        var dayName;
+        switch (currentDay) {
+            case 0:
+                dayName = "Sunday-";
+                break;
+            case 1:
+                dayName = "mMonday-";
+                break;
+            case 2:
+                dayName = "Tuesday-";
+                break;
+            case 3:
+                dayName = "Wednesday-";
+                break;
+            case 4:
+                dayName = "Thursday-";
+                break;
+            case 5:
+                dayName = "Fiday-";
+                break;
+            case 6:
+                dayName = "Staurday-";
+                break;
+            default:
+                dayName = "None-";
+        }
+
+
+        document.write("Today-" + dayName + "Date: " + currentDate.toLocaleDateString() + " You Exit.")
+    </script>
+</body> 
+</html>
